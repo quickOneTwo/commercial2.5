@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 f?vr. 2014 01:18:46 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hibernate.Commandes" table="COMMANDES">
+        <id name="codeTsCmd" type="int">
+            <column name="CODETSCMD" />
+            <generator class="identity" />
+        </id>
+        <property name="codeCmd" type="int">
+            <column name="CODECMD" />
+        </property>
+        <property name="codePdt" type="int">
+            <column name="CODEPDT" />
+        </property>
+        <property name="qtCmd" type="int">
+            <column name="QTCMD" />
+        </property>
+        <property name="client" type="java.lang.String">
+            <column name="CLIENT" />
+        </property>
+    </class>
+</hibernate-mapping>

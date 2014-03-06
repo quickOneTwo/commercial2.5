@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate.Commandes" table="TOUS_COMMANDES">
+        <id name="codeTsCmd" type="int">
+            <column name="CODE_TS_CMD" />
+            <generator class="identity" />
+        </id>
+        <property name="codeCmd" type="int">
+            <column name="CODE_CMD" />
+        </property>
+        <property name="codePdt" type="int">
+            <column name="CODE_PDT" />
+        </property>
+        <property name="qtCmd" type="int">
+            <column name="QT_CMD" />
+        </property>
+        <property name="client" type="java.lang.String">
+            <column name="CLIENT" />
+        </property>
+        <property name="dateCmd" type="java.util.Date">
+            <column name="DATE_CMD"  />
+        </property>
+    </class>
+</hibernate-mapping>

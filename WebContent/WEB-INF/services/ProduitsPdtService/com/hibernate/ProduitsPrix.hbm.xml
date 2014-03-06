@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 f?vr. 2014 13:18:13 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hibernate.ProduitsPrix" table="PRODUITS_PRIX">
+        <id name="codePdt" type="int">
+            <column name="CODEPDT" />
+            <generator class="identity" />
+        </id>
+        <property name="nomPdt" type="java.lang.String">
+            <column name="NOMPDT" />
+        </property>
+        <property name="desc" type="java.lang.String">
+            <column name="DESCRIPTION" length="255"  />
+        </property>
+        <property name="prixPdt" type="long">
+            <column name="PRIXPDT" />
+        </property>
+    </class>
+</hibernate-mapping>
